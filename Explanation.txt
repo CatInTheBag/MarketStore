@@ -1,0 +1,34 @@
+Explanation
+1.Creation of class Owner, which will store basic information for the Owner ( Name only )
+
+2.Creation of abstract class Card (our superclass), which will store information regarding the name of the owner, turnover 
+for the previous month and the initial discount rate
+All fields are private (encapsulation of data). We can get them only through getter and setter methods
+We use class composition - class Owner 
+we use abstract method getDiscountRate(), which must be implemented from the subclasses of class Card 
+(BronzeCard,SilverCard and GoldCard)
+
+3. Creation of class BronzeCard, which inherits from class Card
+We implementat method getDiscountRate()
+We use if else statement to implement the logic for the disctount method
+
+4. Creation of class SilverCard, which inherits from class Card
+We implementat method getDiscountRate()
+We use if else statement to implement the logic for the disctount method
+
+3. Creation of class GoldCard, which inherits from class Card
+We implement method getDiscountRate()
+We use if else statement to implement the logic for the disctount method
+
+4. We create class Purchase
+The constructor of the class use two paramethers.First one is the card, second one is the current purchase
+We make methods to get the purchase value, to get the discount rate, the discount sum and the final sum that 
+must be paid
+We ovveride the toString method, in order to give the needed information for each purchase made from our clients
+
+5.We create class PayDesk, this is where our main method is
+We create 3 cards for Bruce, Jan and Alfred and give the turnover for each client for the previous month
+
+We use ArrayList data structore to store every purchase made. 
+At the end we use the method printInformation() to get the needed information.
+We use polymorphism to get the needed information. 
